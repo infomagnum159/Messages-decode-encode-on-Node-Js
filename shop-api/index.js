@@ -8,7 +8,7 @@ app.use(cors());
 const port = 8000;
 
 app.post('/encode', (req, res) => {
-    res.send({ "encoded": Vigenere.Cipher(req.body.password).crypt(req.body.encode) });
+    res.send({ "encoded": Vigenere.Cipher(req.body.password).crypt(req.body.encode)});
 });
 
 app.post('/decode', (req, res) => {
